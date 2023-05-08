@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Oman Bus Bookings</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html">Oman Bus Bookings</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                               <li class="nav-item" href="#">
+                                 <a class="nav-link" href="index.html">Home</a>
+                             </li>
+                                <li class="nav-item" >
+                              <a class="nav-link" href="Contactus.html">Contact US</a>
+                             </li>
+                           </ul>
+                            <div class="login_btn"><a href="login.html">Login</a></div>
+                            <div class="SignUp_btn"><a href="register.html">Sing Up</a></div>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-xl-6 col-lg-6 col-md-6 ">
+                   <div class="text-bg">
+                     <h1>Oman Bus Bookings</h1>
+                     <span>Booking bus tickets made easy.</span>                    
+                     <a  href="login.html">Booking Now</a>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 padding_lert2">
+                 
+                  <div class="text-img">
+                     <figure><img src="images/header.png" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->
+
+
+       <br/> <br/> <br/> <br/> <br/>
+       <div class="back">
+        <div class="container">
+            <div class="row">
+                <div class="Register">
+                     <h1>Passenger Register Form</h1>
+                    <form action="PassengerRegisterCode.php" method="post">
+                        <table>
+                            <tr>
+                                <td><label for="">Civil Number</label>
+                                    <input type="text" name="pid" class="form-control"  maxlength="8" id="pid"  placeholder="Enter Your Civil Number" style="width:300px;height:45px;border-radius:20px;margin:auto;"  required>
+                                    <div id="result" style="width: 300px"></div>				
+                                  </td>
+                                <td ><label for="">Passenger Name</label>
+                                    <input type="text" name="pname" class="form-control"  maxlength="25" id="pname"  placeholder="Enter Your Name"  pattern="[a-zA-Z ]+"  required title="Please enter a name using only letters" style="width:300px;height:45px;border-radius:20px;margin:auto;"  required>
+                                  </td>
+                            </tr>
+                            <tr>
+                              <td><label for="">Passenger Email</label>
+                                  <input type="email" name="pemail" class="form-control"  maxlength="35"   placeholder="Enter Your Email" style="width:300px;height:45px;border-radius:20px;margin:auto;"  required>
+                                </td>
+                              <td ><label for="">Passenger Phone</label>
+                                  <input type="text" name="pphone" class="form-control"  maxlength="8"   placeholder="Enter Your Phone"  pattern="[7|9|2][0-9]{7}" required title="Please enter a phone number starting with 7, 9, or 2 and has a total of 8 digits" style="width:300px;height:45px;border-radius:20px;margin:auto;"  required>
+                          </tr>
+                          <tr>
+                           <td><label for="">BirthDate</label>
+                               <input type="date" name="Dob" class="form-control"  style="width:300px;height:45px;border-radius:20px;margin:auto;"  required>
+                             </td>
+                           <td ><label for="">Passenger Address</label>
+                               <input type="text" name="paddress" class="form-control"  maxlength="25"   placeholder="Enter Your Address"    style="width:300px;height:45px;border-radius:20px;margin:auto;"  required>
+                       </tr>
+                       <tr>
+                        <td> <label for="">Security Question</label>
+                        <select name="seq"  id="seq" class="form-control" style="width:300px;height:45px;border-radius:20px;margin:auto;" required>
+                            <option value="">Select Security Question</option>
+                            <option value="What was the name of your favorite teacher?">What was the name of your favorite teacher?
+                            </option>
+                            <option value="What is your favorite hobby?">What is your favorite hobby?
+                            </option>
+                            <option value="What is your favorite type of music?">What is your favorite type of music?
+                            </option>
+                            </select> 
+                      </td>
+                      <td><label for="">Answer</label>
+                   <input type="text" name="ans"  maxlength="25" class="form-control" placeholder="Enter Your Answer" style="width:300px;height:45px;border-radius:20px;margin:auto;"  required>
+                        </td>
+                        </tr>
+                           
+                          <tr>
+                            <td> <label for="">Password</label>
+                              <input type="password" name="password"  maxlength="10" class="form-control" placeholder="Enter Your Password"   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" title="Please enter a password with at least 8 characters including at least one uppercase letter, one lowercase letter, one number, and one special character." style="width:300px;height:45px;border-radius:20px;margin:auto;" required>
+                           </td>
+                        </tr>
+                            <tr>
+                              <td colspan="2">
+                                <input type="submit" class="Submit_btn" value="Sing Up">
+                                <input type="reset" class="Cancel_btn" value="Reset">
+                              </td>
+                            </tr>
+                        </table>
+                     </form>
+                </div>
+            </div>
+           </div>
+       </div>
+           
+         <!--Check UserID  start -->
+       <script>
+         $(document).ready(function () {
+           $('#pid').on('blur', function () {
+             var User_ID = $(this).val().trim();
+             if (User_ID != '') {
+               $.ajax({
+                 url: 'Check_PassengerID.php',
+                 type: 'post',
+                 data: { User_ID: User_ID },
+                 success: function (cnt) {
+                   $('#result').html(cnt);
+                 }
+               });
+             }     });
+         });
+       </script>
+
+
+
+
+ 
+     <br/><br/><br/><br/><br/><br/><br/><br/>
+
+     
+      <!--  footer -->
+      <footer >
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                     <div class="cont">
+                        <h3>Oman Bus Bookings
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2023 All Rights Reserved. by Oman Bus Bookings</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+   </body>
+</html>
+
